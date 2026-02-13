@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Valentine Proposal",
-  description: "Valentine Proposal",
+  title: "Mi Amor Valentine Proposal",
+  description: "Valentine Proposal for my wife",
 };
 
 export default function RootLayout({

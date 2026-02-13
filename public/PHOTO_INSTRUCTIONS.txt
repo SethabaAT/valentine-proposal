@@ -1,0 +1,37 @@
+
+To add your own romantic pictures to the gallery:
+
+1.  **Gather your photos**:
+    -   Find the best photos of you and your Valentine.
+    -   Rename them to something simple like `pic1.jpg`, `pic2.jpg`, `pic3.jpg`, etc. (Supported formats: .jpg, .png, .jpeg, .webp).
+
+2.  **Add them to the project**:
+    -   Drag and drop your photo files into the `public` folder of this project (the same place where `song.mp3` is).
+
+3.  **Update the code**:
+    -   Open the file: `src/components/SuccessGallery.tsx`
+    -   Look for the `memories` list at the top of the file (around line 7).
+    -   Change the `url` for each memory to match your file names.
+    -   Update the `message` to be your own personal caption!
+
+**Example:**
+
+```typescript
+const memories = [
+    {
+        id: 1,
+        url: "/pic1.jpg",  // <-- Your first picture filename (must include the leading /)
+        message: "Our first date at the coffee shop ☕" // <-- Your caption
+    },
+    {
+        id: 2,
+        url: "/pic2.jpg",
+        message: "The day you said yes! 💍"
+    },
+    // ... add as many as you want!
+];
+```
+
+**Tips:**
+-   Landscape (horizontal) photos work best for the slideshow.
+-   Make sure the filename in the code matches the actual filename exactly (case-sensitive!).

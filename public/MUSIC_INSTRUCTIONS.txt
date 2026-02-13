@@ -1,0 +1,10 @@
+
+To add your own song to the success page:
+
+1. Obtain an MP3 file of the song you want to play.
+2. Rename the file to `song.mp3`.
+3. Place `song.mp3` inside the `public` folder of this project.
+
+The application is already configured to look for `/song.mp3` and play it automatically when the "Yes" button is clicked.
+
+Note: Some browsers block autoplaying audio without direct user interaction on the audio element itself, but since the user has just clicked "Yes", it often works. If it doesn't play automatically, there is a mute/unmute button available.
