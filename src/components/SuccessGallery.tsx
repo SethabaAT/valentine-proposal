@@ -27,7 +27,7 @@ const memories = [
     },
     {
         id: 5,
-        url: "/images/place",
+        url: "/images/place.jpeg",
         message: "You have the best smile in the world, I am bleassed with your smile every single morning when I wake up 🥰"
     },
     {
@@ -88,11 +88,16 @@ export default function SuccessGallery() {
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
     useEffect(() => {
-        const interval = setInterval(() => {
+        const isLastSlide = currentSlide === memories.length - 1;
+        // 10 seconds for regular slides, 20 seconds for the last one
+        const duration = isLastSlide ? 20000 : 10000;
+
+        const timer = setTimeout(() => {
             setCurrentSlide((prev) => (prev + 1) % memories.length);
-        }, 7000);
-        return () => clearInterval(interval);
-    }, []);
+        }, duration);
+
+        return () => clearTimeout(timer);
+    }, [currentSlide]);
 
     useEffect(() => {
         if (audioRef.current) {
