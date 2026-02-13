@@ -27,12 +27,12 @@ const memories = [
     },
     {
         id: 5,
-        url: "/images/morning-baecation.jpg",
-        message: "Even though the place had no swimming pools, nice views we actually had a live action movie the night before this day �🍿"
+        url: "/images/place",
+        message: "You have the best smile in the world, I am bleassed with your smile every single morning when I wake up"
     },
     {
         id: 6,
-        url: "/images/memories.jpg", // Replace with your photo path, e.g., "/pic1.jpg"
+        url: "/images/memories.jpeg",
         message: "You remember our mini picnic at Tzaneen? We literally spent all day there it was the best day ever, I wonder whose idea that was. 🧺🤔" // Replace with your message
     },
     {
@@ -47,37 +47,37 @@ const memories = [
     },
     {
         id: 9,
-        url: "/images/2023-draw.jpg",
+        url: "/images/2023-draw.jpeg",
         message: "2023, Made me realise that I am ready to take the next step. We literally been through everything that the world threw at us 💍�"
     },
     {
         id: 10,
-        url: "/images/2023-groove.jpg",
+        url: "/images/2023-groove.jpeg",
         message: "2023, See what I mean, every chance we got we made sure that we enjoy ourselves. We were always there for each other 🥂✨"
     },
     {
         id: 11,
-        url: "/images/2023-out.jpg",
+        url: "/images/2023-out.jpeg",
         message: "2023, We always found a reason to go out, and that is something I love about us �🍽️"
     },
     {
         id: 12,
-        url: "/images/2024-out.jpg",
+        url: "/images/2024-out.jpeg",
         message: "2024, Another one of the random ones 🤪�"
     },
     {
         id: 13,
-        url: "/images/2024-sandton.jpg",
+        url: "/images/2024-sandton.jpeg",
         message: "2024, This day we ubered to three different places in one day, I wonder whose idea that was 🚕�"
     },
     {
         id: 14,
-        url: "/images/2025.jpg",
+        url: "/images/2025.jpeg",
         message: "2025, This year proved that we can be a great couple and parents, I am really proud of what we have achieved �🍼"
     },
     {
         id: 15,
-        url: "/images/last.jpg",
+        url: "/images/last.jpeg",
         message: "I will always be thankful to God for bringing us together, and I will forever cherish the day I said hello to you for the first time because of that day I have gotten a partner, a friend, supporter, comforter and more. I love you MaSethaba �❤️"
     },
 ];
@@ -180,7 +180,7 @@ export default function SuccessGallery() {
                 transition={{ delay: 2.5 }}
                 className="mt-16 text-pink-500 font-semibold flex items-center gap-2"
             >
-                Forever yours, Thabo <Heart className="fill-pink-500 animate-pulse" />
+                Forever yours! Sethaba <Heart className="fill-pink-500 animate-pulse" />
             </motion.div>
         </motion.div>
     );
